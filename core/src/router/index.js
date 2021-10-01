@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import serviceRoutes from 'service/routes'
-console.log(serviceRoutes)
+import service1Routes from 'service1/routes'
+import service2Routes from 'service2/routes'
 
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
-import Service from '../views/Service.vue'
+import Service1 from '../views/Service1.vue'
+import Service2 from '../views/Service2.vue'
 
 Vue.use(VueRouter)
 
@@ -22,10 +23,16 @@ const routes = [
     component: About
   },
   {
-    path: '/service',
+    path: '/service1',
     name: 'ServiceCore',
-    component: Service,
-    children: serviceRoutes
+    component: Service1,
+    children: service1Routes
+  },
+  {
+    path: '/service2',
+    name: 'ServiceCore',
+    component: Service2,
+    children: service2Routes
   },
 ]
 

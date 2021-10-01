@@ -1,5 +1,5 @@
 <template>
   <div class="about">
-    about service 1
+    about service 2
   </div>
 </template>

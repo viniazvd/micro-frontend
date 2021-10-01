@@ -1,8 +1,8 @@
 <template>
-  <div id="app-service">
-    <div class="nav-service">
-      <router-link to="/service/home">Home Service</router-link> |
-      <router-link to="/service/about">About Service</router-link>
+  <div id="app-service1">
+    <div class="nav-service1">
+      <router-link to="/service1/home">Home Service 1</router-link> |
+      <router-link to="/service1/about">About Service 1</router-link>
     </div>
 
     <router-view/>
@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'AppService',
+  name: 'AppService1',
 
   props: {
     customProps: Object

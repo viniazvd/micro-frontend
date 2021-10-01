@@ -3,12 +3,12 @@ const ModuleFederationPlugin = require("webpack").container.ModuleFederationPlug
 const deps = require("./package.json").dependencies
 
 module.exports = {
-  publicPath: "http://localhost:8081/",
+  publicPath: "http://localhost:8082/",
 
   configureWebpack: {
     plugins: [
       new ModuleFederationPlugin({
-        name: "service1",
+        name: "service2",
 
         filename: "remoteEntry.js",
 
@@ -22,5 +22,5 @@ module.exports = {
     ]
   },
 
-  devServer: { port: 8081 }
+  devServer: { port: 8082 }
 }
