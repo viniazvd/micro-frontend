@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <div id="nav">
+  <div id="app-service">
+    <div class="nav-service">
       <router-link to="/service/home">Home Service</router-link> |
       <router-link to="/service/about">About Service</router-link>
     </div>

@@ -2,8 +2,10 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import serviceRoutes from 'service/routes'
+console.log(serviceRoutes)
 
 import Home from '../views/Home.vue'
+import About from '../views/About.vue'
 import Service from '../views/Service.vue'
 
 Vue.use(VueRouter)
@@ -15,11 +17,16 @@ const routes = [
     component: Home
   },
   {
+    path: '/about',
+    name: 'AboutCore',
+    component: About
+  },
+  {
     path: '/service',
     name: 'ServiceCore',
-    component: Service
+    component: Service,
+    children: serviceRoutes
   },
-  ...serviceRoutes
 ]
 
 const router = new VueRouter({
