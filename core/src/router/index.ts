@@ -12,13 +12,13 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/service1',
-    name: 'ServiceCore',
+    name: 'ServiceCore1',
     component: AppService1,
     children: service1Routes
   },
   {
     path: '/service2',
-    name: 'ServiceCore',
+    name: 'ServiceCore2',
     component: AppService2,
     children: service2Routes
   },
