@@ -14,7 +14,7 @@ module.exports = {
 
         exposes: {
           "./App": "./src/App.vue",
-          "./routes": "./src/router/routes.js"
+          "./routes": "./src/router/routes.ts"
         },
 
         remotes: {
