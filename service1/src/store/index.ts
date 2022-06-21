@@ -1,15 +1,21 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+const storeService1 = {
+  namespace: true,
 
-Vue.use(Vuex)
-
-export default new Vuex.Store({
   state: {
+    service1: 1
   },
+
   mutations: {
+    increment (state: any) {
+      state.service1++
+    }
   },
+
   actions: {
-  },
-  modules: {
+    increment (context: any) {
+      context.commit('increment')
+    }
   }
-})
+}
+
+export default storeService1

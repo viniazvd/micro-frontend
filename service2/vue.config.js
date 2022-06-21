@@ -1,6 +1,6 @@
 const ModuleFederationPlugin = require("webpack").container.ModuleFederationPlugin
 
-const deps = require("./package.json").dependencies
+// const deps = require("./package.json").dependencies
 
 module.exports = {
   publicPath: "http://localhost:8082/",
@@ -14,14 +14,9 @@ module.exports = {
 
         exposes: {
           "./App": "./src/App.vue",
+          "./store": "./src/store/index.ts",
           "./routes": "./src/router/routes.ts"
         },
-
-        remotes: {
-          core: "core@http://localhost:8080/remoteEntry.js",
-        },
-
-        shared: { ...deps }
       })
     ]
   },

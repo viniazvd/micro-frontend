@@ -1,5 +1,7 @@
 const ModuleFederationPlugin = require("webpack").container.ModuleFederationPlugin;
 
+const deps = require("./package.json").dependencies
+
 module.exports = {
   configureWebpack: {
     plugins: [
@@ -9,7 +11,7 @@ module.exports = {
         filename: "remoteEntry.js",
 
         exposes: {
-          "./store": "./src/store",
+          "./store": "./src/store/index.ts",
         },
 
         remotes: {
@@ -17,12 +19,11 @@ module.exports = {
           service2: "service2@http://localhost:8082/remoteEntry.js"
         },
 
-        shared: {
-          "core-js": "^3.6.5",
-          "vue": "^2.6.11",
-          "vue-router": "^3.2.0",
-          "vuex": "^3.4.0"
-        }
+        shared: [{
+          ...deps,
+          vue: { eager: true, singleton: true },
+          vuex: { eager: true, singleton: true }
+        }]
       })
     ]
   },

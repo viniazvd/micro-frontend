@@ -1,18 +1,35 @@
 <template>
   <div class="home">
      home service 1
-     <HelloWorld  msg="Olá, props passada!" />
+
+     <br>
+     <br>
+
+     state: {{ storeService1.service1 }}
+
+     <button @click="onIncrement">increment</button>
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+<script>
+import {
+  mapState,
+  mapActions
+} from 'vuex';
 
-@Component({
-  components: {
-    HelloWorld,
+export default {
+  name: 'Service1Home',
+
+  computed: {
+    ...mapState({ storeService1: 'storeService1' })
   },
-})
-export default class Home extends Vue {}
+
+  methods: {
+    ...mapActions (['increment']),
+
+    onIncrement () {
+      this.increment()
+    }
+  }
+}
 </script>

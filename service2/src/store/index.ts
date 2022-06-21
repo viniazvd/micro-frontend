@@ -1,7 +1,9 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-import store from 'core/store'
+const storeService2 = {
+  namespace: true,
 
-Vue.use(Vuex)
+  state: {
+    service2: []
+  }
+}
 
-export default store
+export default storeService2
