@@ -1534,12 +1534,7 @@
   optionalDependencies:
     prettier "^1.18.2"
 
-"@vue/composition-api@1.4.6":
-  version "1.4.6"
-  resolved "https://registry.npmmirror.com/@vue/composition-api/-/composition-api-1.4.6.tgz#886c35221cd7c6f55272543a121240e8d3a1306c"
-  integrity sha512-UP359OJ0G0Zli603/i9fhXFmNtZUSrypSFyqClMxizp8ezlaMK2GCmHgy3qyrRnO/xjcDAx09vvXPwNFtxHPtQ==
-
-"@vue/composition-api@^1.4.6":
+"@vue/composition-api@^1.6.2":
   version "1.6.2"
   resolved "https://registry.npmmirror.com/@vue/composition-api/-/composition-api-1.6.2.tgz#8e65cf60cd919f23649951ed14a67d43cd32131d"
   integrity sha512-g6pCOaAB5Z987EwCBIDanRlramrgnWfrrYS8F/0axn2AL8EvyfAebDcLTSr48hac0G0rqC9ODp5LWaiupzl6Tw==
@@ -4977,9 +4972,9 @@ joi@^17.4.0:
     "@sideway/pinpoint" "^2.0.0"
 
 js-beautify@^1.6.12:
-  version "1.14.3"
-  resolved "https://registry.npmmirror.com/js-beautify/-/js-beautify-1.14.3.tgz#3dd11c949178de7f3bdf3f6f752778d3bed95150"
-  integrity sha512-f1ra8PHtOEu/70EBnmiUlV8nJePS58y9qKjl4JHfYWlFH6bo7ogZBz//FAZp7jDuXtYnGYKymZPlrg2I/9Zo4g==
+  version "1.14.4"
+  resolved "https://registry.npmmirror.com/js-beautify/-/js-beautify-1.14.4.tgz#187d600a835f84de67a6d09ceaf3f199b7284c82"
+  integrity sha512-+b4A9c3glceZEmxyIbxDOYB0ZJdReLvyU1077RqKsO4dZx9FUHjTOJn8VHwpg33QoucIykOiYbh7MfqBOghnrA==
   dependencies:
     config-chain "^1.1.13"
     editorconfig "^0.15.3"
@@ -6988,10 +6983,10 @@ schema-utils@^3.0.0, schema-utils@^3.1.0, schema-utils@^3.1.1:
     ajv "^6.12.5"
     ajv-keywords "^3.5.2"
 
-sdz-icons@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.npmmirror.com/sdz-icons/-/sdz-icons-0.0.6.tgz#b5c9b1816ad2bf3cbcd6c18174649c13da92a66f"
-  integrity sha512-x5BmjlASxhJgkFXz3Jw3UFDIrPQ6tU3RcoG02ITigSo4TB/Qw/N+92T4TXSctQcCqFqiqFWnaWSXhqirTTYAEg==
+sdz-icons@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.npmmirror.com/sdz-icons/-/sdz-icons-0.0.7.tgz#0c91d8a193a13aab42212f106b504046d29f4f14"
+  integrity sha512-sthvPqBrnB0b7dsOOWTJfiGMA+BYSPaZv6n9PadRwKenIgsqn327y8lj+GgwUpyRWhhhT6VZnALpXAuwWWqksA==
 
 select-hose@^2.0.0:
   version "2.0.0"
@@ -7997,6 +7992,11 @@ utils-merge@1.0.1:
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
+utils-sdz@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.npmmirror.com/utils-sdz/-/utils-sdz-0.0.9.tgz#4b4402285eb544698260ebfe1ba740156c879f38"
+  integrity sha512-HR8cdVyJrzxf6q1qLprIyDLOPIVuUaAMJJgKiF1Idje3aRti2OHNVTbfppbUYlSeoQUp62w7hUT4NVt5FZlzSA==
+
 uuid@^3.3.2, uuid@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
@@ -8057,7 +8057,7 @@ vue-coe-image@^0.2.3:
   resolved "https://registry.npmmirror.com/vue-coe-image/-/vue-coe-image-0.2.4.tgz#e2091c2830b3c9a260faae1c7ae7efa2b936847e"
   integrity sha512-JGo4ECtsvxn2KE2bXKwpU0kRwe6e/8ZNWuHXxQLve4frnWkXu3+c5PKO3IrS8Q8ZNKxjyjK6r2XBab7S3eFZjw==
 
-vue-coerousel@^1.0.14:
+vue-coerousel@^1.0.17:
   version "1.0.18"
   resolved "https://registry.npmmirror.com/vue-coerousel/-/vue-coerousel-1.0.18.tgz#16f2cf5bde689d243fa816ca789ab676285f7bbe"
   integrity sha512-iQBGZyStgcV4WbeFXCHATI8jT/RdlB8rsa3CRxFW7+Ai8iiBYIM8zmeIJ3tUk9epgW76f7cRDFXtkM7emVib7w==
@@ -8091,19 +8091,19 @@ vue-router@^3.2.0:
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.5.2.tgz#5f55e3f251970e36c3e8d88a7cd2d67a350ade5c"
   integrity sha512-807gn82hTnjCYGrnF3eNmIw/dk7/GE4B5h69BlyCK9KHASwSloD1Sjcn06zg9fVG4fYH2DrsNBZkpLtb25WtaQ==
 
-vue-sdz@0.0.76:
-  version "0.0.76"
-  resolved "https://registry.npmmirror.com/vue-sdz/-/vue-sdz-0.0.76.tgz#a7af199c8eecd630b3be87eff014b5595651c56b"
-  integrity sha512-QV0xwy21kuGFZTt90jNI8MDHl5sz1N9CfxsCSO4UR1z+S1c0KcMl0kft7Z9y5UYHBeBbED3dgRca1ZCLdC2aGA==
+vue-sdz@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.npmmirror.com/vue-sdz/-/vue-sdz-0.1.1.tgz#611058ac89fb13f5116e4803a20e8a2a1905b258"
+  integrity sha512-lSK21i3P9DhFiQ5Pp2cFqBJujEPJqKUWDpvHeqYD+zvRtcRw4O59cgtO4hob55uYnFbw1J2zyN6epmei1j3J9A==
   dependencies:
-    "@vue/composition-api" "^1.4.6"
     "@vuelidate/core" "^2.0.0-alpha.34"
     "@vuelidate/validators" "^2.0.0-alpha.26"
-    sdz-icons "^0.0.6"
+    sdz-icons "^0.0.7"
+    utils-sdz "^0.0.9"
     v-money "^0.8.1"
     vue-coe-feedback "^0.1.5"
     vue-coe-image "^0.2.3"
-    vue-coerousel "^1.0.14"
+    vue-coerousel "^1.0.17"
     vue-the-mask "^0.11.1"
 
 vue-style-loader@^4.1.0, vue-style-loader@^4.1.3:

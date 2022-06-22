@@ -8,17 +8,29 @@ module.exports = {
       new ModuleFederationPlugin({
         name: "core",
 
-        filename: "remoteEntry.js",
+        // library: { type: "var", name: "core" },
+
+        // filename: "coreEntry.js",
 
         remotes: {
-          service1: "service1@http://localhost:8081/remoteEntry.js",
-          service2: "service2@http://localhost:8082/remoteEntry.js"
+          service1: "service1@http://localhost:8081/service1Entry.js",
+          service2: "service2@http://localhost:8082/service2Entry.js"
         },
 
         shared: [{
-          ...deps,
-          vue: { eager: true, singleton: true },
-          vuex: { eager: true, singleton: true }
+          // ...deps,
+          vue: {
+            singleton: true,
+            requiredVersion: deps.vue,
+          },
+          vuex: {
+            singleton: true,
+            requiredVersion: deps.vuex,
+          },
+          'vue-sdz': {
+            singleton: true,
+            requiredVersion: deps['vue-sdz'],
+          }
         }]
       })
     ]
