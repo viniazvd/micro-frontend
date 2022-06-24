@@ -18,7 +18,7 @@ module.exports = {
           "./routes": "./src/router/routes.ts"
         },
 
-        shared: [{
+        shared: {
           // ...deps,
           // vue: {
           //   singleton: true,
@@ -32,7 +32,7 @@ module.exports = {
             singleton: true,
             requiredVersion: deps['vue-sdz'],
           }
-        }]
+        }
       })
     ]
   },

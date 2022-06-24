@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "upgrade:packages": "yarn-upgrade-all"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -19,8 +20,19 @@
     "@vue/cli-plugin-typescript": "~4.5.0",
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "5.0.0-beta.3",
+    "@vue/composition-api": "^1.6.2",
     "babel-loader": "^8.2.2",
-    "typescript": "~4.1.5",
-    "vue-template-compiler": "^2.6.11"
+    "typescript": "4.1.6",
+    "vue-template-compiler": "^2.6.11",
+    "yarn-upgrade-all": "^0.7.1"
+  },
+  "yarn-upgrade-all": {
+    "ignore": [
+      "vue",
+      "vuex",
+      "vue-sdz",
+      "typescript",
+      "vue-template-compiler"
+    ]
   }
 }
