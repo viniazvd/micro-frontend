@@ -28,10 +28,8 @@ module.exports = {
             singleton: true,
             requiredVersion: deps.vue,
           },
-          vuex: {
-            singleton: true,
-            requiredVersion: deps.vuex,
-          },
+          vuex: { singleton: true },
+          'vue-router': { singleton: true },
           'vue-sdz': {
             singleton: true,
             requiredVersion: deps['vue-sdz'],

@@ -19,18 +19,9 @@ module.exports = {
         },
 
         shared: {
-          // ...deps,
-          // vue: {
-          //   singleton: true,
-          //   requiredVersion: deps.vue,
-          // },
-          vuex: {
-            singleton: true,
-            requiredVersion: deps.vuex,
-          },
           'vue-sdz': {
             singleton: true,
-            requiredVersion: deps['vue-sdz'],
+            requiredVersion: deps['vue-sdz']
           }
         }
       })
