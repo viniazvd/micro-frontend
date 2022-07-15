@@ -3,11 +3,11 @@ declare module '*.vue' {
   export default Vue
 }
 
-declare module 'service1/routes'
-declare module 'service2/routes'
+declare module 'onboarding/routes'
+declare module 'forgotPassword/routes'
 
-declare module 'service1/store'
-declare module 'service2/store'
+declare module 'onboarding/store'
+declare module 'forgotPassword/store'
 
-declare module 'service1/App'
-declare module 'service2/App'
+declare module 'onboarding/App'
+declare module 'forgotPassword/App'

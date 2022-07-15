@@ -1,26 +1,26 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import service1Routes from 'service1/routes'
-import service2Routes from 'service2/routes'
+import onboardingRoutes from 'onboarding/routes'
+import forgotPasswordRoutes from 'forgotPassword/routes'
 
-import AppService2 from 'service2/App'
-import AppService1 from 'service1/App'
+import AppforgotPassword from 'forgotPassword/App'
+import AppOnboarding from 'onboarding/App'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/service1',
-    name: 'ServiceCore1',
-    component: AppService1,
-    children: service1Routes
+    path: '/onboarding',
+    name: 'onboarding',
+    component: AppOnboarding,
+    children: onboardingRoutes
   },
   {
-    path: '/service2',
-    name: 'ServiceCore2',
-    component: AppService2,
-    children: service2Routes
+    path: '/forgot-password',
+    name: 'forgotPassword',
+    component: AppforgotPassword,
+    children: forgotPasswordRoutes
   },
 ]
 

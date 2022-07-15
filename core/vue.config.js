@@ -13,8 +13,8 @@ module.exports = {
         // library: { type: "var", name: "core" },
 
         remotes: {
-          service1: "service1@http://localhost:8081/service1Entry.js",
-          service2: "service2@http://localhost:8082/service2Entry.js"
+          onboarding: "onboarding@http://localhost:8081/onboardingEntry.js",
+          forgotPassword: "forgotPassword@http://localhost:8082/forgotPasswordEntry.js"
         },
 
         shared: {

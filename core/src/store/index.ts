@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import storeService1 from 'service1/store'
-import storeService2 from 'service2/store'
+import storeOnboarding from 'onboarding/store'
+import storeForgotPassword from 'forgotPassword/store'
 
 Vue.use(Vuex)
 
@@ -16,7 +16,7 @@ const storeCore = {
 export default new Vuex.Store({
   modules: {
     storeCore,
-    storeService1,
-    storeService2
+    storeOnboarding,
+    storeForgotPassword
   }
 })
